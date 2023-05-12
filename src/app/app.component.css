@@ -1,0 +1,38 @@
+:host {
+  font-size: 14px;
+  color: #333;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 8px 0;
+}
+
+p {
+  margin: 0;
+}
+
+.header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(25, 118, 210, 0.9);
+  color: white;
+  /* font-weight: 600; */
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin: auto 1em;
+  min-width: 360px;
+}
