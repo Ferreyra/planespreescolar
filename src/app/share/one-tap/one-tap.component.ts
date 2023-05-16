@@ -25,7 +25,6 @@ export class OneTapComponent implements OnInit {
   public response: Payload;
   public imgUrl = signal('');
   public tokenStored: string;
-  public g_id: string = 'g_id_onload';
 
   constructor(public cookie: CookieService, private jwt: JwtDecodeService) {}
 
@@ -43,7 +42,6 @@ export class OneTapComponent implements OnInit {
         }
       };
     } else {
-      this.g_id = 'g_id_loaded';
       this.response = this.jwt.decodeJwtResponse(this.tokenStored);
       this.imgUrl.set(this.response.picture);
     }

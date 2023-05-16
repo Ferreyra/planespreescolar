@@ -1,6 +1,6 @@
 <div
   *ngIf="!tokenStored"
-  id="{{ g_id }}"
+  id="g_id_onload"
   data-skip_prompt_cookie="sid"
   data-client_id="362739926893-jjm3h2hc2gtaibqjvtt944ha9uvjlrem.apps.googleusercontent.com"
   data-context="signup"
@@ -10,6 +10,7 @@
   data-callback="credencialResponse"
 ></div>
 <div
+  *ngIf="!tokenStored"
   class="g_id_signin"
   data-type="standard"
   data-shape="rectangular"
@@ -18,4 +19,4 @@
   data-size="large"
   data-logo_alignment="center"
 ></div>
-<img *ngIf="response" src="{{ imgUrl() }}" alt="User Logo" />
+<img *ngIf="tokenStored" src="{{ imgUrl() }}" alt="User Logo" />

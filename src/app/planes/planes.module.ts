@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MatExpansionModule } from '@angular/material/expansion';
 import { MatCardModule } from '@angular/material/card';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatIconModule } from '@angular/material/icon';
 
 import { AccordionComponent } from './accordion/accordion.component';
 import { PagesComponent } from './pages/pages.component';
@@ -9,8 +11,10 @@ import { PagesComponent } from './pages/pages.component';
 @NgModule({
   imports: [
     CommonModule,
-    MatExpansionModule,
     MatCardModule,
+    MatExpansionModule,
+    MatFormFieldModule,
+    MatIconModule
   ],
   declarations: [
     AccordionComponent,

@@ -1,8 +1,21 @@
 /* Add application styles & imports to this file! */
-html,
+*,
+*::before,
+*::after {
+	position: relative;
+	left: 0;
+	top: 0;
+	box-sizing: border-box;
+}
+
+html {
+  --size-h1: 2.25rem;
+}
+
 body {
   height: 100%;
 }
+
 body {
   margin: 0;
   font-family: Roboto, 'Helvetica Neue', sans-serif;
